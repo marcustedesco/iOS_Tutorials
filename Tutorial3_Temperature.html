@@ -1,0 +1,556 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0084)http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/CourseWebsiteTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<link rel="shortcut icon" href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/favicon.ico" type="image/x-icon">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Tutorial: Temperature</title>
+<link rel="shortcut icon" href="http://manta.cs.vt.edu/CS3714/favicon.ico" type="image/x-icon">
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+p.MsoNormal {margin:0in;
+margin-bottom:.0001pt;
+font-size:12.0pt;
+font-family:"Cambria","serif";
+}
+</style>
+<!-- InstanceEndEditable -->
+<link href="./Tutorial3_Temperature_files/global.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- InstanceBeginRepeat name="Repeating Region" --><!-- InstanceBeginRepeatEntry -->
+<table border="0" align="center" cellpadding="5" cellspacing="0">
+  <tbody><tr>
+    <td valign="top"><a href="http://www.vt.edu/" target="_blank"><img src="./Tutorial3_Temperature_files/VTLogoNew.gif" alt="Virginia Tech" width="200" height="43" border="0" longdesc="http://www.vt.edu"></a></td>
+    <td valign="top"><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/index.html"></a><img src="./Tutorial3_Temperature_files/cs3714CourseTitle.gif" width="468" height="40"></td>
+  </tr>
+</tbody></table>
+<div align="center">
+  <ul id="dhtmlmenu6" style="list-style: none; margin: 0; padding: 0">
+    <li style="display: inline">
+      <!-- source: "C:/Users/Osman Balci/Balci/Website Development/CS3714/CS3714 Website Template Menus.dms" -->
+      <img id="TrackPath_m6" src="./Tutorial3_Temperature_files/empty.gif" width="1" height="1" style="display:none" alt="">
+      <script type="text/javascript" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_scr.js"></script><img id="m6menubg4" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6bg4.png"><img id="m6menubg5" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6bg5.png"><img id="m6menubg6" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6bg6.png"><img id="pre0m6tlm0" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i0.png"><img id="pre1m6tlm0" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i0h.png"><img id="pre0m6tlm1" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i1.png"><img id="pre1m6tlm1" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i1h.png"><img id="pre0m6tlm2" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i2.png"><img id="pre1m6tlm2" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i2h.png"><img id="pre0m6tlm3" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i3.png"><img id="pre1m6tlm3" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i3h.png"><img id="pre0m6tlm4" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i4.png"><img id="pre1m6tlm4" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i4h.png"><img id="pre0m6tlm5" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i5.png"><img id="pre1m6tlm5" width="1" height="1" style="display:none" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i5h.png"><style type="text/css">
+.m6CL0,.m6CL0:link{text-decoration:none;color:Black; }
+.m6CL0:visited{color:Black}
+.m6mit{padding-left:10px;padding-right:10px;color:Black; font-weight:bold; font-family:Trebuchet MS,Arial,Verdana,Tahoma; font-size:x-small; }
+</style><script type="text/javascript" src="./Tutorial3_Temperature_files/menu_dom.js"></script>
+      <table style="line-height:0px" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_b.png" alt=""></td>
+          <td><a id="m6tlm0a" href="http://manta.cs.vt.edu/CS3714/Index.html" target="_top" onmouseover="exM(m6,&#39;none&#39;,&#39;&#39;,event);chgBg(m6,&#39;m6tlm0&#39;,3)" onmouseout="chgBg(m6,&#39;m6tlm0&#39;,0,1)"><img style="border-style:none" id="m6tlm0" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i0.png" alt=""></a></td>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm1a" href="http://manta.cs.vt.edu/CS3714/Course.html" target="_top" onmouseover="exM(m6,&#39;m6mn1&#39;,&#39;m6tlm1&#39;,event);chgBg(m6,&#39;m6tlm1&#39;,3)" onmouseout="coM(m6,&#39;m6mn1&#39;,&#39;m6tlm1&#39;);chgBg(m6,&#39;m6tlm1&#39;,0)"><img style="border-style:none" id="m6tlm1" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i1.png" alt=""></a></td>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm2a" href="http://manta.cs.vt.edu/CS3714/Policies.html" target="_top" onmouseover="exM(m6,&#39;m6mn2&#39;,&#39;m6tlm2&#39;,event);chgBg(m6,&#39;m6tlm2&#39;,3)" onmouseout="coM(m6,&#39;m6mn2&#39;,&#39;m6tlm2&#39;);chgBg(m6,&#39;m6tlm2&#39;,0)"><img style="border-style:none" id="m6tlm2" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i2.png" alt=""></a></td>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm3a" href="http://manta.cs.vt.edu/CS3714/Staff.html" target="_top" onmouseover="exM(m6,&#39;m6mn3&#39;,&#39;m6tlm3&#39;,event);chgBg(m6,&#39;m6tlm3&#39;,3)" onmouseout="coM(m6,&#39;m6mn3&#39;,&#39;m6tlm3&#39;);chgBg(m6,&#39;m6tlm3&#39;,0)"><img style="border-style:none" id="m6tlm3" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i3.png" alt=""></a></td>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm4a" href="http://manta.cs.vt.edu/CS3714/Grading.html" target="_top" onmouseover="exM(m6,&#39;m6mn4&#39;,&#39;m6tlm4&#39;,event);chgBg(m6,&#39;m6tlm4&#39;,3)" onmouseout="coM(m6,&#39;m6mn4&#39;,&#39;m6tlm4&#39;);chgBg(m6,&#39;m6tlm4&#39;,0)"><img style="border-style:none" id="m6tlm4" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i4.png" alt=""></a></td>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm5a" href="http://manta.cs.vt.edu/CS3714/Other.html" target="_top" onmouseover="exM(m6,&#39;m6mn5&#39;,&#39;m6tlm5&#39;,event);chgBg(m6,&#39;m6tlm5&#39;,3)" onmouseout="coM(m6,&#39;m6mn5&#39;,&#39;m6tlm5&#39;);chgBg(m6,&#39;m6tlm5&#39;,0)"><img style="border-style:none" id="m6tlm5" src="./Tutorial3_Temperature_files/dhtmlmenu_m6_i5.png" alt=""></a></td>
+          <td><img src="./Tutorial3_Temperature_files/dhtmlmenu_m6_e.png" alt=""></td>
+        </tr>
+      </tbody></table>
+    </li>
+  </ul>
+</div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
+<!-- InstanceBeginEditable name="Editable Region" --> <br>
+<div align="center" class="LargeTitle">Tutorial: Temperature</div>
+<p class="HeadingPurple">Learning Objectives</p>
+<ol>
+  <li>How to create a User Interface (UI) with label, image view, and slider objects.</li>
+  <li>How to apply Design Patterns: Model-View-Controller (MVC), Delegation, and Target-Action.</li>
+  <li>How to  reposition and resize UI objects under different device orientations and screen sizes.</li>
+  <li>iOS Application Life Cycle.</li>
+  <li>Introduction to Swift Programming Language.</li>
+</ol>
+<p class="HeadingPurple"><strong>Table of Contents</strong></p>
+<ul>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step0" target="_self">Step 0: Earlier Phases of the Software Life Cycle</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step1" target="_self">Step 1: Application Functionality Specification</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step2" target="_self">Step 2: Application Design Specification based on the MVC Design Pattern</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step3" target="_self">Step 3: Creation of a New Project</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step4" target="_self">Step 4: The  iOS Application Life Cycle</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step5" target="_self">Step 5: Delegation Design Pattern: AppDelegate</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step6" target="_self">Step 6: MVC Design Pattern: View – User Interface Development</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step7" target="_self">Step 7: Auto Layout  of the UI Objects</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step8" target="_self">Step 8: Target-Action Design Pattern</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step9" target="_self">Step 9: MVC Design Pattern: Controller</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature.html#Step10" target="_self">Step 10: Build and Run your application</a></li>
+</ul>
+<hr>
+<p><span class="areaName"><a name="Step0" id="Step0"></a>Step 0: Earlier Phases of the Software Life Cycle</span></p>
+<blockquote>
+  <p>We assume that earlier phases of the Software Life Cycle  have been completed. See Dr. Balci's <a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/Handouts/SELifeCycle.html" target="_top">Software Life Cycle</a>. The life cycle processes <em>Problem Formulation</em>, <em>Requirements Engineering</em>, <em>Architecting</em>, and <em>Design</em> are assumed to be completed. In this tutorial, we focus on the <em>Programming</em> process.</p>
+</blockquote>
+<p class="areaName"><a name="Step1" id="Step1"></a>Step 1:  Application Functionality Specification</p>
+<table border="0" align="center" cellpadding="5" cellspacing="0">
+  <tbody><tr>
+    <td><div align="center"><img src="./Tutorial3_Temperature_files/finishedAppP.png" width="250" height="360"></div></td>
+    <td width="300"><p>The app displays a  title "Temperature" and a thermometer image as shown.</p>
+      <p>The user taps  the slider knob and moves it to the left or right to display an integer number between 0 (leftmost) and 212 (rightmost) above the slider as shown. The initial displayed value is set to 70.</p>
+      <p>The user interface objects are repositioned and resized upon device's rotation to landscape orientation as shown on right.</p>
+      <p>Note that, in landscape orientation, the thermometer image is shrunk to fit the vertical space and the slider object is stretched to the available horizontal space.</p></td>
+    <td><img src="./Tutorial3_Temperature_files/finishedAppL.png" width="360" height="250"></td>
+  </tr>
+</tbody></table>
+<p class="areaName"><a name="Step2" id="Step2"></a>Step 2: Application  Design Specification based on the MVC Design Pattern</p>
+<blockquote>
+  <p>iOS applications are commonly designed using  the following Design Patterns: (1) <strong>Model-View-Controller (MVC)</strong>, (2) <strong>Delegation</strong>, and (3) <strong>Target-Action</strong>. Based on the desired functionality described above, we have the following MVC-based design specification for our application.</p>
+</blockquote>
+<div align="center"><img src="./Tutorial3_Temperature_files/MVCDesignSpec.png" width="738" height="632"></div>
+<blockquote>
+  <p>Our View Controller class, <span class="courier">ViewController</span>, inherits from the <span class="courier">UIViewController</span> class. By importing with <span class="courier">import UIKit</span>, we make all  <span class="courier">UIKit</span> framework classes as available for use. See the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIKit_Framework/index.html#classes">UIKit Framework Classes Hierarchy</a> and identify the <span class="courier">UIViewController</span>, <span class="courier">UILabel, UIImageView, and UISlider</span> classes used in our application.</p>
+  <ul>
+    <li>Every time the slider knob is moved by the user, the slider value is changed. </li>
+    <li>Every time the slider value is changed, the <strong>sliderChanged</strong> method is invoked. </li>
+    <li>Every time  the <strong>sliderChanged</strong> method is invoked, the slider's new value is assigned to the slider label displaying the temperature value in Fahrenheit. </li>
+  </ul>
+</blockquote>
+<p><span class="areaName"><a name="Step3" id="Step3"></a>Step 3: Creation of a New Project</span></p>
+<blockquote>
+  <ol>
+    
+    <li> Launch Xcode. Create a new project by selecting <strong>File &#8594; New &#8594;  Project...</strong></li>
+    <li> Select <strong>iOS &#8594; Application &#8594; Single View Application</strong> template. Click Next.</li>
+    <li>In the <em>Choose options for your new project </em>dialog,<br>
+      <br>
+    </li>
+    <ul>
+      <li>Enter Product Name as <strong>Temperature. </strong>Note that the product name is your app name displayed under the app icon on the home screen of the iOS device. Therefore, it should be selected short enough to fit into the available space so that it is not truncated. The app name can have spaces such as <em>Google Maps</em>.</li>
+      <li>Enter <strong>Your Name</strong> as Organization Name</li>
+      <li>Enter <span class="courier">com.yourname</span> as your company/organization unique identifier. Note that <strong>domain names</strong>, e.g., apple.com, ibm.com, microsoft.com, <strong>are unique</strong>.</li>
+      <li>The string <span class="courier">com.yourname.Temperature</span> becomes the Bundle ID for your application uniquely identifying it in the App Store for distribution.</li>
+      <li>Select <strong>Swift</strong> as the programming language to use.</li>
+      <li>Select <strong>Universal</strong> for the Devices, implying that your app will run on  those iOS devices, i.e., iPhone, iPad, and iPod Touch, that can run iOS 8.0 or higher. Note that some old iOS devices cannot be upgraded to version 8.0.</li>
+      <li>Click Next. In the File Browser window displayed, <br>
+        <ol>
+          <li>Select a location on your hard disk to store your project. </li>
+          <li><strong>Uncheck Source Control</strong> to disable version control. Click <strong>Create</strong> to create your project.      </li>
+        </ol>
+      </li>
+    </ul>
+  </ol>
+<p class="ListTitle">General Project Settings</p>
+  <ol>
+    <li>Click the project name <strong>Temperature </strong>in the project navigator to display the <strong>General</strong> project settings.</li>
+    <li>Click the <strong>Team</strong> pop-up menu and select your <strong>iOS Developer Program</strong> account name from the list displayed. If you have not added your iOS Developer Program account, select<strong> Add an Account...</strong><br>
+    </li>
+    <li>Set the <strong>Deployment Target to 8.0</strong>.</li>
+  </ol>
+  <p class="ListTitle">Copying Files into Your Project</p>
+  <ol>
+    <li> Download the <a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/Temperature_files.zip">Temperature_files.zip</a><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/Temperature/WhereAmI_files.zip"></a> file.</li>
+    <li>Uncompress it.</li>
+    <li>Click <span class="courier">Images.xcassets</span> in the project navigator  to display the Image Assets Pane.</li>
+    <li>Drag and drop the downloaded folders <strong>App Icons</strong> and <strong>Launch Images</strong> and the file named <span class="courier">thermometer.png</span> into the Image Assets Pane.</li>
+    <li>Images dragged and dropped in the Image Assets Pane are stored in the <strong>Media Library</strong>.<br>
+    </li>
+  </ol>
+  <p class="ListTitle"> Setting the App Icons</p>
+  <ol>
+    <li>Click <strong>AppIcon</strong> in the Image Assets Pane.</li>
+    <li>Select the options for iOS 7.0 under the Attributes Inspector.</li>
+    <li>Click the <strong>Media Library</strong> icon in the Library Selector Bar to show all of the image assets for the project.</li>
+    <li>Click the first app icon in the listing. Then while pressing the <strong>Shift</strong> key, use the <strong>Down-Arrow</strong> key to select all of the  remaining app icons.</li>
+    <li>Drag and drop the selected app icons into the AppIcon assets area.</li>
+    <li>Drag and drop the  app icons on the remaining empty placeholders with corresponding sizes.</li>
+    <li>Make sure that each placeholder has an image.</li>
+    <li>You can inspect the size, filename, and other attributes of a selected app icon using the <strong>Attributes Inspector</strong>. </li>
+  </ol>
+  <p><span class="ListTitle">Setting the Launch Images</span><br>
+  </p>
+  <ol>
+    <li>Click <strong>LaunchImage</strong> in the Image Assets Pane.</li>
+    <li>Select the options for iOS 7.0 under the Attributes Inspector.</li>
+    <li>Click the <strong>Media Library</strong> icon in the Library Selector Bar to show all of the image assets for the project.</li>
+    <li>Click the first Launch Image. Then while pressing the <strong>Shift</strong> key, use the <strong>Down-Arrow</strong> key to select all of the  remaining launch images.</li>
+    <li>Drag and drop the selected launch images into the LaunchImage assets area.</li>
+    <li>Drag and drop the  launch images on the remaining empty placeholders with corresponding sizes.</li>
+    <li>Make sure that each placeholder has an image as shown below.</li>
+    <li>You can inspect the size, filename, and other attributes of a selected image using the <strong>Attributes Inspector</strong>.<br>
+    </li>
+  </ol>
+</blockquote>
+<span class="areaName"><a name="Step4" id="Step4"></a>Step 4: The  iOS Application Life Cycle</span>
+<blockquote>
+  <p>Please read <strong>The App Life Cycle</strong> in the <a href="https://developer.apple.com/library/prerelease/ios/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/TheAppLifeCycle/TheAppLifeCycle.html#//apple_ref/doc/uid/TP40007072-CH2-SW1">App Programming Guide for iOS</a> for further information. The following is taken from this source.</p>
+  <p class="ListTitle">The Structure of an App</p>
+  <blockquote>
+    <p>“During startup, the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">UIApplicationMain</span> function sets up several key objects and starts the app running. At the heart of every iOS app is the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">UIApplication</span> object, whose job is to facilitate the interactions between the system and other objects in the app. Figure 2-1 shows the objects commonly found in most apps....  iOS apps use a <span class="HeadingPurple">model-view-controller</span> <s>architecture</s> design pattern. This pattern separates the app's data and business logic from the visual presentation of that data. This <s>architecture</s> design pattern is crucial to creating apps that can run on different devices with different screen sizes.”</p>
+    <p><img src="./Tutorial3_Temperature_files/figure2-1.png" width="589" height="544"></p>
+  </blockquote>
+  <p class="ListTitle">The Main Run Loop</p>
+  <blockquote>
+    <p>“An app's <strong>main run loop</strong> processes all user-related events. The <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">UIApplication</span> object sets up the main run loop at launch time and uses it to process events and handle updates to view-based interfaces. As the name suggests, the main run loop executes on the app's main thread. This behavior ensures that user-related events are processed serially in the order in which they were received.</p>
+    <p>Figure 2-2 shows the architecture of the main run loop and how user events result in actions taken by your app. As the user interacts with a device, events related to those interactions are generated by the system and delivered to the app via a special port set up by UIKit. Events are queued internally by the app and dispatched one-by-one to the main run loop for execution. The <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">UIApplication</span> object is the first object to receive the event and make the decision about what needs to be done. A touch event is usually dispatched to the main window object, which in turn dispatches it to the view in which the touch occurred. Other events might take slightly different paths through various app objects.”</p>
+<p><img src="./Tutorial3_Temperature_files/figure2-2.png" width="680" height="487"></p>
+  </blockquote>
+  <p class="ListTitle">Execution States for Apps</p>
+  <blockquote>
+    <p>“At any given moment, your app is in one of the states listed in Table 2-3. The system moves your app from state to state in response to actions happening throughout the system. For example, when the user presses the Home button, a phone call comes in, or any of several other interruptions occurs, the currently running apps change state in response. Figure 2-3 shows the paths that an app takes when moving from state to state.”</p>
+    <p><img src="./Tutorial3_Temperature_files/figure2-3.png" width="395" height="500"></p>
+  </blockquote>
+</blockquote><blockquote>&nbsp;
+</blockquote>
+<p><span class="areaName"><a name="Step5" id="Step5"></a>Step 5: Delegation Design Pattern: AppDelegate</span></p>
+<blockquote>
+  <p>The <span class="courier">UIApplication</span> is a class contained in the <strong>UIKit framework</strong> under the <strong>Cocoa Touch Layer</strong>. Go to the <a href="https://developer.apple.com/library/prerelease/ios/navigation/">iOS Developer Library</a>. Expand the <strong>Cocoa Touch Layer</strong> and click <strong>UIKit</strong> to display the list of classess contained in it.</p>
+  <p>The <span class="courier">UIApplication</span> is a  gigantic class like an elephant. We do <strong>not</strong> want to subclass <span class="courier">UIApplication</span> and  create another elephant just to override some of its methods. Doing so would be very costly for our limited resources. Instead, an object is designated as a delegate, called <strong>AppDelegate</strong>, representing the elephant. The <strong>AppDelegate</strong> object  is called the <strong>Delegate Object</strong> and this design approach is called the <span class="ListTitle">Delegation Design Pattern</span>. </p>
+  <p>The <strong>AppDelegate</strong> object is created to adopt the <strong>UIApplicationDelegate</strong> protocol. “The <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationDelegate_Protocol/index.html#//apple_ref/doc/uid/TP40006786">UIApplicationDelegate</a> protocol defines methods that are called by the singleton <span class="courier">UIApplication</span> object in response to important events in the lifetime of your app. The app delegate works alongside the app object to ensure your app interacts properly with the system and with other apps. Specifically, the methods of the app delegate give you a chance to respond to important changes.” The <span class="courier">AppDelegate.swift</span> class file below lists some of the protocol methods (functions). </p>
+  <blockquote>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; AppDelegate.swift</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Temperature</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Created by Osman Balci on 8/1/14.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Copyright (c) 2014 Osman Balci. All rights  reserved.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+  </blockquote>
+  <p>The <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">import</span> declaration (compiler directive) imports  the UIKit framework so that  all of the classes in the UIKit framework are accessible in this <span class="courier">AppDelegate</span> class.</p>
+  <blockquote>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">import</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> UIKit</span>  </p>
+  </blockquote>
+  <p>The <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@UIApplicationMain</span> attribute defines the starting point for your application. </p>
+  <blockquote>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@UIApplicationMain</span></p>
+  </blockquote>
+  <p>Declare a  class called <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">AppDelegate</span> as inheriting from the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIResponder_Class/index.html#//apple_ref/occ/cl/UIResponder">UIResponder</a> class and as conforming to the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationDelegate_Protocol/index.html#//apple_ref/doc/uid/TP40006786">UIApplicationDelegate</a> protocol. Once you conform to a protocol, you have the right to implement its methods.  </p>
+  <blockquote>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">class</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> AppDelegate: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIResponder</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">, </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplicationDelegate</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> {</span></p>
+  </blockquote>
+<p>“The <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIWindow_Class/index.html#//apple_ref/doc/uid/TP40006817">UIWindow</a> class defines an object known as a window that manages and coordinates the views an app displays on a device screen. Unless an app can display content on an external device screen, an app has only one window.”</p>
+<p>Declare an instance <span class="HeadingPurple">var</span>iable (property), called <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">window</span>, as an object reference pointing to an object instantiated from the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIWindow</span> class. But what if the instantiation fails, no<span style="font-family: &#39;Arial&#39;, &#39;sans-serif&#39;; font-size: 10.0pt; color: black"> <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIWindow</span> </span>object is created, and the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">window</span> object reference points to <span class="courier">nil</span>. Swift will not allow  assigning a <span class="courier">nil</span> value to a variable and will trigger a compiler error. Therefore, we write a <strong>question mark</strong> after the type of the value to direct the compiler to <span class="HeadingPurple">wrap up</span> the object reference value into a so called <span class="HeadingPurple">Optional </span>value. Later, we use the <strong>exclamation mark</strong> to <span class="HeadingPurple">unwrap</span> the <span class="HeadingPurple">Optional </span> value to get the actual value. <strong>Optionals must be used in those situations where a value may be  absent. </strong>“An optional value either contains a value or contains <span class="courier">nil</span> to indicate that the value is missing. <span class="ListTitle">Write a question mark (?) after the type of a value to mark the value as optional.</span>” [<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097">Swift</a>]</p>
+<blockquote>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">var</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> window: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIWindow</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">?</span>  </p>
+  </blockquote>
+  <p>“You can use an <span class="courier">if</span> statement to find out whether an optional contains a value. If an optional does have a value, it evaluates to <span class="courier">true</span>; if it has no value at all, it evaluates to <span class="courier">false</span>. Once you're sure that the optional does contain a value, you can access its underlying value by adding an exclamation mark (!) to the end of the optional's name. The exclamation mark effectively says,<em> I know that this optional definitely has a value; please use it</em>. This is known as <span class="Heading">forced unwrapping</span> of the optional's value.” [<a href="https://developer.apple.com/library/prerelease/ios/documentation/Swift/Conceptual/Swift_Programming_Language/index.html#//apple_ref/doc/uid/TP40014097">Swift</a>]</p>
+<p>Methods are functions containing procedural code. You use the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span> keyword to designate the code as either a method or a function. A method differs from a function in one important aspect: <strong>method parameters  are named except the first one</strong> and <strong>parameter names must be used when calling a method</strong>.</p>
+<p>The following defines a method with two parameters: The first one is unnamed and the second one is named as <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">didFinishLaunchingWithOptions</span>. </p>
+<blockquote>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> application(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!, didFinishLaunchingWithOptions  launchOptions: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">NSDictionary</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) -&gt; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">Bool</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> {</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Override point for  customization after application launch.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">return</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">true</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+</blockquote>
+  <p>The method name is <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">application</span>. Its first unnamed parameter is called <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">application</span>, which is an object reference pointing to an object instantiated from the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span> class. Your application is instantiated from the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span> class as a singleton object, meaning as the only object, and the object reference of the newly created <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span> object is forcefully stored into the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">application</span> object reference. We use the exclamation mark (!) at the end of the optional's type to force the compiler to assign the value directly because we are sure that the object reference has a value.</p>
+  <p>The second parameter of the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">application</span> method, named <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">didFinishLaunchingWithOptions</span>, is called <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">launchOptions</span>, which is an object reference pointing to an object instantiated from the <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">NSDictionary</span> class. Again, we force the compiler by using  the exclamation mark (!) to assign the Optional object reference value directly because we are sure that it has a value.  </p>
+  <p>The <span class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">-&gt; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">Bool</span></span> indicates that the method returns only one value of type <strong>boolean</strong>. Note that a method can return multiple values in Swift.</p>
+  <p>The following  <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIApplicationDelegate_Protocol/index.html#//apple_ref/doc/uid/TP40006786">UIApplicationDelegate</a> protocol methods are listed as empty and are optional to implement. They are listed here to guide the developer.</p>
+  <blockquote>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> applicationWillResignActive(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Sent when the application is  about to move from active to inactive state. This can occur for certain types  of temporary interruptions (such as an incoming phone call or SMS message) or  when the user quits the application and it begins the transition to the  background state.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Use this method to pause  ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games  should use this method to pause the game.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> applicationDidEnterBackground(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Use this method to release  shared resources, save user data, invalidate timers, and store enough  application state information to restore your application to its current state  in case it is terminated later.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// If your application supports  background execution, this method is called instead of  applicationWillTerminate: when the user quits.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> applicationWillEnterForeground(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Called as part of the  transition from the background to the inactive state; here you can undo many of  the changes made on entering the background.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> applicationDidBecomeActive(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Restart any tasks that were  paused (or not yet started) while the application was inactive. If the  application was previously in the background, optionally refresh the user interface.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> applicationWillTerminate(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Called when the application  is about to terminate. Save data if appropriate. See also  applicationDidEnterBackground:.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">}</span></p>
+    <p>&nbsp;</p>
+  </blockquote>
+</blockquote>
+<p class="areaName"><a name="Step6" id="Step6"></a>Step 6: MVC Design Pattern: View – User Interface Development</p>
+<blockquote>
+  <p>The<span class="HeadingPurple"> Interface Builder (IB) </span> is used to create your application's <strong>User Interface (UI)</strong>. It enables you to drag and drop UI objects from the Object Library  and graphically connect some UI objects  to instance variables and instance methods specified in your code. We use the <span class="courier">.storyboard</span> file to use the IB  to create the UI.</p>
+  <p>What is a <strong>Storyboard</strong>? Dictionary definitions:</p>
+  <ul>
+    <li>“a panel or panels on which a sequence of sketches depict the significant changes of action and scene in a planned film, as for a movie, television show, or advertisement.”</li>
+    <li>“a series of sketches or photographs showing the sequence of shots or images planned for a film”</li>
+  </ul>
+  <p>We use the term <strong>Storyboard</strong> to refer to an iOS file containing</p>
+  <ul>
+    <li>an iOS app's  navigation structure or logical flow (with horizontal and vertical decomposition of app's functionality),</li>
+    <li>definitions of the views making up the iOS app's UI,</li>
+    <li>connection of a UI object to code for performing an action or defining an outlet,</li>
+    <li>specification of a relationship between two views, and</li>
+    <li>how a view will segue into the next one.</li>
+  </ul>
+  <p>Click the <span class="courier">Main.storyboard</span> file in the Project Navigator to display your app's only scene (view) as shown in the screenshot below.</p>
+</blockquote>
+<ol>
+  <ol>
+    <li>Click inside the window frame or click the View object in the Document Outline pane to select the <strong>View </strong>object instantiated from the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIView_Class/index.html#//apple_ref/doc/uid/TP40006816">UIView</a> class.</li>
+    <li>Bring up the <strong>Attributes inspector</strong> as shown in the screenshot below.</li>
+    <li>Click the <strong>Background color well</strong> (rectangular area) to pop up the Colors palette as shown below.</li>
+    <li>Select the <strong>Mercury</strong> crayon as shown below to color the background with a soft gray color.<br>
+      <br>
+      <img src="./Tutorial3_Temperature_files/storyboard1.png" width="1388" height="806"><br>
+      <br>
+    </li>
+    <li>Drag  a <strong>Label</strong> object from the Object library and  drop it on the View canvas towards the top as shown in the screenshot below.  This action is the instantiation (creation) of a <strong>Label</strong> object from the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UILabel_Class/index.html#//apple_ref/doc/uid/TP40006797">UILabel</a> class at design time.<br>
+      <br>
+<ul>
+        <li>Double-click it and enter <strong>Temperature</strong> as its title.</li>
+        <li>Select the label and bring up the  Attributes inspector:
+          <ul>
+            <li>set its Font to System  with size 24</li>
+            <li>set its alignment to Center</li>
+            <li>change its color to crayon called Cayenne</li>
+          </ul>
+        </li>
+        <li>Bring up  the Size inspector and set <span class="ListTitle">x=200, y=25, w=200, and h=35</span>, with origin specified as the upper-left corner.<br>
+          <br>
+        </li>
+      </ul>
+    </li>
+    <li>  Drag and drop an <strong>Image View</strong> object from the Object library and position it on  the View canvas  right below the Temperature label. This action is the instantiation (creation) of an <strong>Image View</strong> object from the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UIImageView_Class/index.html#//apple_ref/doc/uid/TP40006889">UIImageView</a> class at design time.<br>
+      <br>
+      While the newly created Image View object is selected,
+<ul>
+        <li>show the Size Inspector  and set <span class="ListTitle">x=267, y=65, w=66, and h=180</span>, with origin specified as the upper-left corner.</li>
+        <li>show the Attributes Inspector:
+          <ul>
+            <li>  select <span class="courier">thermometer</span> from the Image pull-down menu</li>
+            <li>set the View Mode  to <strong>Scale To Fill</strong><br>
+  <br>
+            </li>
+          </ul>
+        </li>
+      </ul>
+<img src="./Tutorial3_Temperature_files/storyboard2.png" width="1350" height="774"><br>
+      <br>
+    </li>
+    <li>    Drag  another <strong>Label</strong> object from the Object library and drop  it on the View canvas right below the thermometer image. This action is the instantiation (creation) of a <strong>Label</strong> object from the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UILabel_Class/index.html#//apple_ref/doc/uid/TP40006797">UILabel</a> class at design time.<br>
+      <br>
+      <ul>
+        <li>Double-click it and enter <strong>70°F</strong> as its title. To enter <strong>°F</strong>, select <strong>Edit  &#8594; Special Characters...</strong>. Select the  <strong>Letterlike Symbols</strong> category as shown in the following screenshot. Click <strong>°F</strong> to insert it.<br>
+          <br>
+          <img src="./Tutorial3_Temperature_files/degreeSelect.png" width="253" height="238">
+          <br>
+          <br>
+        </li>
+        <li>Select the label and bring up the  Attributes inspector:
+          <ul>
+            <li>set its Font to System  with size 32</li>
+            <li>set its alignment to Center</li>
+          </ul>
+        </li>
+        <li>Bring up  the Size inspector and set <span class="ListTitle">x=240, y=250, w=120, and h=45</span>, with origin specified as the upper-left corner.<br>
+          <br>
+        </li>
+      </ul>
+    </li>
+    <li>Drag  a <strong>Slider</strong> object from the Object library and drop it on the View canvas as shown in the screenshot above. This action is the instantiation (creation) of a <strong>Slider</strong> object from the <a href="https://developer.apple.com/library/prerelease/ios/documentation/UIKit/Reference/UISlider_Class/index.html#//apple_ref/doc/uid/TP40006798">UISlider</a> class at design time.<br>
+      <br>
+      While the newly created Slider object is selected,
+<ul>
+        <li>Under the Attributes inspector, set its <strong>Minimum Value = 0, Maximum Value = 212, and Current Value = 70</strong>.</li>
+        <li>Under the Size inspector, set <span class="ListTitle">x=38, y=550, w=524, and h=31</span>, with origin specified as the upper-left corner.<br>
+          <br>
+        </li>
+      </ul>
+    </li>
+  </ol>
+</ol>
+<p><span class="areaName"><a name="Step7" id="Step7"></a>Step 7: Auto Layout of the UI Objects</span></p>
+<blockquote>
+  <p>“Auto Layout is a system that lets you lay out your app's user interface by creating a mathematical description of the relationships between the elements. You define these relationships in terms of constraints either on individual elements, or between sets of elements. <strong>Using Auto Layout, you can create a dynamic and versatile interface that responds appropriately to changes in screen size, device orientation, and localization.</strong>” [<a href="https://developer.apple.com/library/prerelease/ios/documentation/UserExperience/Conceptual/AutolayoutPG/Introduction/Introduction.html">Auto Layout Guide</a>]</p>
+  <p>We want all of the UI objects to be centered within the view in both portrait and landscape orientations in all screen sizes.</p>
+
+  <ol>
+    <li>Within the View area, drag around all of the UI objects created to select them all. Or you can Command-click  each UI object to select them all.</li>
+    <li>Select <strong>Editor  &#8594; Align &#8594;</strong> <strong>Horizontal Center in Container</strong>.</li>
+  </ol> 
+<span class="ListTitle">Auto Layout of the Temperature Label Object </span>
+  <p>We want the Temperature heading label object to be positioned 5 pts below the Top Layout Guide in both portrait and landscape orientations and have fixed width and height.</p>
+  <ol>
+    <li>Select the Temperature  label object.</li>
+    <li>Click the <strong>Pin</strong> tool in the layout toolbar as shown in the screenshot below.</li>
+    <li>In the <em>Add New Constraints</em> dialog, as shown in the following screenshot,
+      <ul>
+        <li>Enter 5 as the vertical space to the Top Layout Guide  and click the <strong>I beam</strong> below it to fix the spacing.</li>
+        <li>Check the boxes for <strong>Width</strong> and <strong>Height</strong> to fix them to 200 and 35.</li>
+        <li>Click the <strong>Add 3 Constraints</strong> button to apply the constraints.<br>
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <img src="./Tutorial3_Temperature_files/tempConstraints.png" width="912" height="684"><br>
+  <br>
+</blockquote>
+<blockquote><span class="ListTitle">Auto Layout of the Thermometer Image View Object </span></blockquote>
+<blockquote>
+  <p>The thermometer Image View object would be too high to fit within the landscape orientation. Therefore, we want it to vertically shrink to fit the available space.</p>
+  <ol>
+    <li>Select the Thermometer Image View object.</li>
+    <li><strong>Control-drag</strong> from it to the Temperature label object, let go the Control key and mouse, and select <strong>Vertical Spacing</strong> from the pop-up menu as shown in the screenshot below.</li>
+    <li><strong>Control-drag</strong> from it to the Degree label object, let go the Control key and mouse, and select <strong>Vertical Spacing</strong> from the pop-up menu as shown in the screenshot below.</li>
+  </ol>
+  <blockquote>
+    <p><img src="./Tutorial3_Temperature_files/thermoConstraints.png" width="395" height="319"><br>
+      <br>
+    </p>
+  </blockquote>
+</blockquote>
+<blockquote><span class="ListTitle">Auto Layout of the Slider Label Object </span>
+  <ol>
+    <li>Select the Slider Label object as shown in the following screenshot.</li>
+    <li><strong>Control-drag</strong> from it to the Horizontal Slider object, let go the Control key and mouse, and select <strong>Vertical Spacing</strong> from the pop-up menu as shown in the screenshot below.</li>
+    <li>Bring up the <strong>Size Inspector</strong> and click the <strong>Bottom Space to Horizontal Slider</strong> constraint to edit it.</li>
+    <li> In the pop-up menu, set the distance to be <strong>Greater Than or Equal</strong> to 3 pts as shown in the screenshot below.</li>
+    <li>While the Slider Label object is selected:
+      <ul>
+        <li>select <strong>Editor  &#8594; Pin &#8594;</strong> <strong>Width</strong> to fix the width size to 120 pts.</li>
+        <li>select <strong>Editor  &#8594; Pin &#8594;</strong> <strong>Height</strong> to fix the width size to 45 pts.</li>
+      </ul>
+    </li>
+  </ol>
+</blockquote>
+<blockquote>
+  <p><img src="./Tutorial3_Temperature_files/degreeConstraints.png" width="920" height="683"></p>
+</blockquote>
+<blockquote><span class="ListTitle">Auto Layout of the Horizontal Slider Object </span>
+  <p>We want the Horizontal Slider object to <strong>stretch</strong> to the entire size of the screen by leaving 40 pts on the left and 40 pts on the right. We want its distance to the bottom edge of the screen to be fixed to 20 pts. </p>
+  <ol>
+    <li>Select the Horizontal Slider object object.</li>
+    <li>Click the <strong>Pin</strong> tool to pop up the  <em>Add New Constraints</em> dialog as shown in the following screenshot.</li>
+    <li>Set left and right distances to 40 pts each. This means that 40 pts will be left on each side of the slider and the slider image will be stretched along  side  the screen of the iOS device.</li>
+    <li>Set the bottom distance to 20 pts as fixed distance.</li>
+    <li>Click the <strong>Add 3 Constraints</strong> button to apply the constraints.</li>
+  </ol>
+  <blockquote>
+    <p><img src="./Tutorial3_Temperature_files/sliderConstraints.png" width="292" height="376"></p>
+  </blockquote>
+  <br>
+  When all auto layout constraints are applied to all of the UI objects, you should se the following under the <strong>Size Inspector</strong>.<br>
+  <br>
+  <img src="./Tutorial3_Temperature_files/allConstraints.png" width="1560" height="772"><br>
+</blockquote>
+<blockquote><br>
+  <p><span class="ListTitle">Run your application under the iOS Simulator</span></p>
+  <ol>
+    <li>Make sure that all of your files are saved.</li>
+    <li>Click the device selection pop-up menu for the iOS Simulator on the top left corner of the Xcode window and select <strong>iPhone 5S</strong>.</li>
+    <li>Click the <strong>Run</strong> button on the top left corner of the Xcode window to execute your app under the iOS Simulator. </li>
+    <li>Under the <strong>iOS Simulator</strong>, select <strong>Hardware &#8594; Rotate Left </strong>or<strong> Rotate Right </strong> or press <strong>Command-Left Arrow</strong> or <strong>Command-Right Arrow</strong> repeatedly to see how auto layout works under different device orientations and screen sizes.</li>
+    <li>Try the above for other iOS devices.</li>
+  </ol>
+</blockquote>
+<p><span class="areaName"><a name="Step8" id="Step8"></a>Step 8: Target-Action Design Pattern</span></p>
+<blockquote>
+  <p>Under the Target-Action design pattern, we graphically connect the <strong>Slider Label</strong> (70°F) and <strong>Slider</strong> objects to our <span class="courier">ViewController.swift</span> code. </p>
+  <ol>
+    <li>Show the storyboard and the <span class="courier">ViewController.swift</span> file in the Assistant Editor side by side as shown in the following screenshot.</li>
+    <li>Control-drag from the <strong>Slider Label</strong> (70°F) object to the location  in the <span class="courier">ViewController.swift</span> file as shown below. When you let go the mouse button, a dialog box shows up.</li>
+    <li>Make sure that <strong>Outlet</strong> is selected for the Connection; the class (Type) is set to <strong>UILabel</strong>; and <strong>Strong</strong> is selected to direct the compiler to retain the value during the entire execution of the app.</li>
+    <li>Enter <span class="courier">sliderLabel</span> as the name of the connection.</li>
+    <li>Click <strong>Connect</strong> to insert the following into the code:<br>
+      <br>
+      <p class="MsoNormal"><span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@IBOutlet</span><span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">var</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> sliderLabel: </span><span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UILabel</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!</span><span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; "> </span></p>
+<br>
+      <p>Read the statement above as follows: </p>
+      <ul>
+        <li>Create a property (instance <span class="HeadingPurple">var</span>iable), called <span class="courier">sliderLabel</span>, as an object reference pointing to an object instantiated from the UILabel class in the <strong>Interface Builder (IB)</strong>. </li>
+        <li>Create  the <strong>Getter</strong> and <strong>Setter</strong> methods for the <span class="courier">sliderLabel</span> property.</li>
+        <li>The <span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@IBOutlet</span> IB attribute indicates that this property will be visible as an <strong>Outlet</strong> in the <strong>IB</strong>. Note that the  <span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@IBOutlet</span> attribute is not part of the Swift programming language. <span class="ListTitle">An IB attribute is a declaration attribute used by the IB to synchronize with Xcode.</span></li>
+      </ul>
+    </li>
+  </ol>
+<img src="./Tutorial3_Temperature_files/degreeLabelConnect.png" width="1493" height="768"> <br>
+<br>
+</blockquote>
+<blockquote>
+  <ol>
+    <li>Show the storyboard and the <span class="courier">ViewController.swift</span> file in the Assistant Editor side by side as shown in the following screenshot.</li>
+    <li>Control-drag from the <strong>Slider</strong> object to the location  in the <span class="courier">ViewController.swift</span> file as shown below. When you let go the mouse button, a dialog box shows up.</li>
+    <li>Select <strong>Action</strong> from the Connection pop-up menu.</li>
+    <li>Enter <span class="courier">sliderChanged</span> as the Name.</li>
+    <li> Set the class (Type) to <strong>UISlider</strong> to make it strongly typed.</li>
+    <li>Make sure that the <em>Event</em> type is <strong>Value Changed</strong> and <em>Arguments</em> is set to Sender.</li>
+    <li>Click <strong>Connect</strong> to insert the following into the code:<br>
+      <br>
+      <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@IBAction</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> sliderChanged(sender: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UISlider</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">) {</span></p>
+      <p class="MsoNormal"><span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;}</span><span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; "> </span></p>
+      <br>
+      <p>Read the statement above as follows: </p>
+      <ul>
+        <li>Declare a method called <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">sliderChanged </span>with one parameter called <span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">sender</span>, which specifies the object reference of the object instantiated from the UISlider class   in the Interface Builder (IB).</li>
+        <li>The <span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@<span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">IBAction</span></span> IB attribute indicates that this method will be invoked from an IB object. Note that the <span style="line-height:115%; font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@<span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">IBAction</span></span> attribute is not part of the Swift programming language. <span class="ListTitle">An IB attribute is a declaration attribute used by the IB to synchronize with Xcode.</span></li>
+      </ul>
+    </li>
+  </ol>
+  <p><img src="./Tutorial3_Temperature_files/sliderConnect.png" width="1452" height="769"></p>
+  <br>
+</blockquote>
+<p class="areaName"><a name="Step9" id="Step9"></a>Step 9: MVC Design Pattern: Controller</p>
+<blockquote>
+  <p>Copy and paste the documented code given below. <span class="Heading">Carefully study the code, understand what it is doing, and learn from it!</span></p>
+  <p><span class="courier">ViewController.swift</span> file:</p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; ViewController.swift</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Temperature</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Created by Osman Balci on 8/1/14.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Copyright (c) 2014 Osman Balci. All rights  reserved.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">import</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> UIKit</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">class</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> ViewController: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIViewController</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> {</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@IBOutlet</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">var</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> sliderLabel: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UILabel</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@IBAction</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> sliderChanged(sender: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UISlider</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">) {</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">/*</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The sender's value, i.e., slider's  value, is a floating-point value.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Floating-point values are always  truncated when used to initialize a new integer value.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Therefore, we add 0.5 to round the  value to the nearest integer value.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">*/</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">let</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> sliderIntValue = </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">Int</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">(sender.</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">value</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> + </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#1C00CF; ">0.5</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">)&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//  Conversion from Float to Integer</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">/*</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Slider's integer value is converted  into a String value.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The String value is assigned to be the  slider's label text.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">*/</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#3F6E74; ">sliderLabel</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">.</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">text</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> = </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">String</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">(sliderIntValue)  + </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#C41A16; ">"</span><span style="font-family:&#39;Cambria Math&#39;,&#39;serif&#39;; font-size:10.0pt; color:#C41A16; ">&#8457;</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#C41A16; ">"</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Conversion from Integer to  String</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">override</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> viewDidLoad() {</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">super</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">.</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#2E0D6E; ">viewDidLoad</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">()</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Do any additional setup  after loading the view, typically from a nib.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">override</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> didReceiveMemoryWarning() {</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">super</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">.</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#2E0D6E; ">didReceiveMemoryWarning</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">()</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Dispose of any resources  that can be recreated.</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+  <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">}</span></p>
+<p>&nbsp;</p>
+</blockquote>
+<p><span class="areaName"><a name="Step10" id="Step10"></a>Step 10: Build and Run your application</span></p>
+<blockquote>
+  <ol>
+    <li>Make sure that all of your files are saved.</li>
+    <li>Click the device selection pop-up menu for the iOS Simulator on the top left corner of the Xcode window and select <strong>iPhone 5S</strong>.</li>
+    <li>Click the <strong>Run</strong> button on the top left corner of the Xcode window to execute your app under the iOS Simulator. </li>
+    <li>Under the <strong>iOS Simulator</strong>, select <strong>Hardware &#8594; Rotate Left </strong>or<strong> Rotate Right </strong>  or press <strong>Command-Left Arrow</strong> or <strong>Command-Right Arrow</strong> repeatedly to see how auto layout works under different device orientations and screen sizes.</li>
+    <li>Try the above for other iOS devices.</li>
+  </ol>
+  <p>&nbsp;</p>
+</blockquote>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceEnd -->
+</body></html>

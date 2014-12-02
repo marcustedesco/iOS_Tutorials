@@ -1,0 +1,426 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0078)http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><!-- InstanceBegin template="/Templates/CourseWebsiteTemplate.dwt" codeOutsideHTMLIsLocked="false" --><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<link rel="shortcut icon" href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/favicon.ico" type="image/x-icon">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Tutorial: WhereAmI</title>
+<link rel="shortcut icon" href="http://manta.cs.vt.edu/CS3714/favicon.ico" type="image/x-icon">
+<!-- InstanceEndEditable -->
+<!-- InstanceBeginEditable name="head" -->
+<style type="text/css">
+<!--
+p.MsoNormal {
+margin-top:0in;
+margin-right:0in;
+margin-bottom:10.0pt;
+margin-left:0in;
+line-height:115%;
+font-size:11.0pt;
+font-family:"Calibri","sans-serif";
+}
+-->
+</style>
+<!-- InstanceEndEditable -->
+<link href="./Tutorial2_WhereAmI_files/global.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<!-- InstanceBeginRepeat name="Repeating Region" --><!-- InstanceBeginRepeatEntry -->
+<table border="0" align="center" cellpadding="5" cellspacing="0">
+  <tbody><tr>
+    <td valign="top"><a href="http://www.vt.edu/" target="_blank"><img src="./Tutorial2_WhereAmI_files/VTLogoNew.gif" alt="Virginia Tech" width="200" height="43" border="0" longdesc="http://www.vt.edu"></a></td>
+    <td valign="top"><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/index.html"></a><img src="./Tutorial2_WhereAmI_files/cs3714CourseTitle.gif" width="468" height="40"></td>
+  </tr>
+</tbody></table>
+<div align="center">
+  <ul id="dhtmlmenu6" style="list-style: none; margin: 0; padding: 0">
+    <li style="display: inline">
+      <!-- source: "C:/Users/Osman Balci/Balci/Website Development/CS3714/CS3714 Website Template Menus.dms" -->
+      <img id="TrackPath_m6" src="./Tutorial2_WhereAmI_files/empty.gif" width="1" height="1" style="display:none" alt="">
+      <script type="text/javascript" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_scr.js"></script><img id="m6menubg4" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6bg4.png"><img id="m6menubg5" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6bg5.png"><img id="m6menubg6" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6bg6.png"><img id="pre0m6tlm0" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i0.png"><img id="pre1m6tlm0" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i0h.png"><img id="pre0m6tlm1" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i1.png"><img id="pre1m6tlm1" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i1h.png"><img id="pre0m6tlm2" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i2.png"><img id="pre1m6tlm2" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i2h.png"><img id="pre0m6tlm3" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i3.png"><img id="pre1m6tlm3" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i3h.png"><img id="pre0m6tlm4" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i4.png"><img id="pre1m6tlm4" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i4h.png"><img id="pre0m6tlm5" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i5.png"><img id="pre1m6tlm5" width="1" height="1" style="display:none" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i5h.png"><style type="text/css">
+.m6CL0,.m6CL0:link{text-decoration:none;color:Black; }
+.m6CL0:visited{color:Black}
+.m6mit{padding-left:10px;padding-right:10px;color:Black; font-weight:bold; font-family:Trebuchet MS,Arial,Verdana,Tahoma; font-size:x-small; }
+</style><script type="text/javascript" src="./Tutorial2_WhereAmI_files/menu_dom.js"></script>
+      <table style="line-height:0px" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_b.png" alt=""></td>
+          <td><a id="m6tlm0a" href="http://manta.cs.vt.edu/CS3714/Index.html" target="_top" onmouseover="exM(m6,&#39;none&#39;,&#39;&#39;,event);chgBg(m6,&#39;m6tlm0&#39;,3)" onmouseout="chgBg(m6,&#39;m6tlm0&#39;,0,1)"><img style="border-style:none" id="m6tlm0" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i0.png" alt=""></a></td>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm1a" href="http://manta.cs.vt.edu/CS3714/Course.html" target="_top" onmouseover="exM(m6,&#39;m6mn1&#39;,&#39;m6tlm1&#39;,event);chgBg(m6,&#39;m6tlm1&#39;,3)" onmouseout="coM(m6,&#39;m6mn1&#39;,&#39;m6tlm1&#39;);chgBg(m6,&#39;m6tlm1&#39;,0)"><img style="border-style:none" id="m6tlm1" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i1.png" alt=""></a></td>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm2a" href="http://manta.cs.vt.edu/CS3714/Policies.html" target="_top" onmouseover="exM(m6,&#39;m6mn2&#39;,&#39;m6tlm2&#39;,event);chgBg(m6,&#39;m6tlm2&#39;,3)" onmouseout="coM(m6,&#39;m6mn2&#39;,&#39;m6tlm2&#39;);chgBg(m6,&#39;m6tlm2&#39;,0)"><img style="border-style:none" id="m6tlm2" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i2.png" alt=""></a></td>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm3a" href="http://manta.cs.vt.edu/CS3714/Staff.html" target="_top" onmouseover="exM(m6,&#39;m6mn3&#39;,&#39;m6tlm3&#39;,event);chgBg(m6,&#39;m6tlm3&#39;,3)" onmouseout="coM(m6,&#39;m6mn3&#39;,&#39;m6tlm3&#39;);chgBg(m6,&#39;m6tlm3&#39;,0)"><img style="border-style:none" id="m6tlm3" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i3.png" alt=""></a></td>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm4a" href="http://manta.cs.vt.edu/CS3714/Grading.html" target="_top" onmouseover="exM(m6,&#39;m6mn4&#39;,&#39;m6tlm4&#39;,event);chgBg(m6,&#39;m6tlm4&#39;,3)" onmouseout="coM(m6,&#39;m6mn4&#39;,&#39;m6tlm4&#39;);chgBg(m6,&#39;m6tlm4&#39;,0)"><img style="border-style:none" id="m6tlm4" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i4.png" alt=""></a></td>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_s.png" alt=""></td>
+          <td><a id="m6tlm5a" href="http://manta.cs.vt.edu/CS3714/Other.html" target="_top" onmouseover="exM(m6,&#39;m6mn5&#39;,&#39;m6tlm5&#39;,event);chgBg(m6,&#39;m6tlm5&#39;,3)" onmouseout="coM(m6,&#39;m6mn5&#39;,&#39;m6tlm5&#39;);chgBg(m6,&#39;m6tlm5&#39;,0)"><img style="border-style:none" id="m6tlm5" src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_i5.png" alt=""></a></td>
+          <td><img src="./Tutorial2_WhereAmI_files/dhtmlmenu_m6_e.png" alt=""></td>
+        </tr>
+      </tbody></table>
+    </li>
+  </ul>
+</div>
+<!-- InstanceEndRepeatEntry --><!-- InstanceEndRepeat -->
+<!-- InstanceBeginEditable name="Editable Region" --> <br>
+<div align="center" class="LargeTitle">Tutorial: WhereAmI</div>
+<p class="HeadingPurple">Learning Objectives</p>
+<ol>
+  <li>How to provide an Apple Map as part of your app's user interface and enable the user to zoom in, zoom out, or drag the map.</li>
+  <li>How to show the user's current location on an Apple map.</li>
+  <li>How to obtain the user's authorization to allow your app to monitor his/her current location.</li>
+  <li>How to add a new Framework (e.g., MapKit.framework) to your project.</li>
+  <li>How to deploy your app to an iOS device for testing purposes.</li>
+</ol>
+<p class="HeadingPurple"><strong>Table of Contents</strong></p>
+<ul>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step0" target="_self">Step 0: Earlier Phases of the Software Life Cycle</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step1" target="_self">Step 1: Application Functionality Specification</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step2" target="_self">Step 2: Creation of a New Project</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step3" target="_self">Step 3: Setting General Project Attributes</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step4" target="_self">Step 4: Application Icons and Launch Images</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step5" target="_self">Step 5: iOS Layers, Frameworks, and Classes</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step6" target="_self">Step 6: Map Kit Framework</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step7" target="_self">Step 7: User Interface Development</a>  </li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step8" target="_self">Step 8: Obtaining User's Authorization</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step9" target="_self">Step 9: Running the App under the iOS Simulator</a></li>
+  <li><a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI.html#Step10" target="_self">Step 10: Running the App on iPhone or iPod Touch</a><br>
+  </li>
+</ul>
+<hr>
+<p class="areaName"><a name="Step0" id="Step0"></a>Step 0: Earlier Phases of the Software Life Cycle</p>
+<blockquote>
+  <p>We assume that earlier phases of the Software Life Cycle  have been completed. See Dr. Balci's <a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/Handouts/SELifeCycle.html" target="_top">Software Life Cycle</a>. The life cycle processes <em>Problem Formulation</em>, <em>Requirements Engineering</em>, <em>Architecting</em>, and <em>Design</em> are assumed to be completed. In this tutorial, we focus on the <em>Programming</em> process.</p>
+</blockquote>
+<p><a name="Step1" id="Step1"></a><span class="areaName">Step 1:  Application Functionality Specification</span></p>
+<blockquote>
+  <table width="1400" border="0" cellpadding="5" cellspacing="0">
+    <tbody><tr>
+    <td><div align="center">Portrait Orientation<br>
+      <br>
+        <img src="./Tutorial2_WhereAmI_files/finishedAppP.png" width="320" height="568"></div></td>
+      <td><p><span class="ListTitle">Requirements:</span></p>
+        <ol>
+          <li>The app shall be built to run on iPhone and iPod Touch.</li>
+          <li>Upon launch, the app shall display the current location of the user on a map.</li>
+          <li>All device orientations shall be supported except upside-down.</li>
+          <li>The map shall be displayed both in portrait and landscape orientations.</li>
+          <li>User's permission shall be obtained before displaying his/her current location.</li>
+          <li>The user shall manipulate the map with the options listed below.</li>
+        </ol>
+        <p><span class="ListTitle">To zoom in:</span></p>
+        <ul>
+          <li><em>Pinch open</em> the map with two fingers or </li>
+          <li>Double-tap with one finger (or double click)</li>
+        </ul>
+        <p><span class="ListTitle">To zoom out:</span></p>
+        <ul>
+          <li><em>Pinch close</em> the map with two fingers or </li>
+          <li>Tap with two fingers (or Option-click)<br>
+          </li>
+        </ul>
+        <p><span class="ListTitle">To pan or scroll to another part of the map:</span></p>
+        <ul>
+          <li>Drag up, down, left, or right with one finger</li>
+        </ul></td>
+      <td><div align="center">Landscape Orientation<br>
+        <br>
+          <img src="./Tutorial2_WhereAmI_files/finishedAppL.png" width="568" height="320"></div></td>
+    </tr>
+  </tbody></table>
+</blockquote>
+<p><a name="Step2" id="Step2"></a><span class="areaName">Step 2: Creation of a New Project</span></p>
+<blockquote>
+  <ol>
+    <li> Launch Xcode. Create a new project by selecting <strong>File &#8594; New &#8594;  Project...</strong> (The three dots after a menu item, referred to as ellipsis, imply that additional options will be presented to the user after the selection of the menu item.)</li>
+    <li> Select <strong>iOS &#8594; Application &#8594; Single View Application</strong> template. Click Next.<br>
+      <br>
+      <img src="./Tutorial2_WhereAmI_files/newProject.png" width="730" height="430"><br>
+      <br>
+    </li>
+    <li>In the <em>Choose options for your new project</em> dialog, as shown in the following screenshot, <br>
+      <br>
+    </li>
+    <ul>
+      <li>Enter Product Name as <strong>WhereAmI. </strong>Note that the product name is your app name displayed under the app icon on the home screen of the iOS device. Therefore, it should be selected short enough to fit into the available space so that it is not truncated. The app name can have spaces such as <em>Google Maps</em>.</li>
+      <li>Enter <strong>Your Name</strong> as Organization Name</li>
+      <li>Enter <span class="courier">com.yourname</span> as your company/organization unique identifier. Note that <strong>domain names</strong>, e.g., apple.com, ibm.com, microsoft.com, <strong>are unique</strong>.</li>
+      <li>The string <span class="courier">com.yourname.hereAmI</span> becomes the Bundle ID for your application uniquely identifying it in the App Store for distribution.</li>
+      <li>Select <strong>Swift</strong> as the programming language to use. <span class="HeadingPurple">Swift requires iOS version 7.0 or higher.</span></li>
+      <li>Select <strong>iPhone</strong> for the Devices, implying that your app will run on those iPhone and iPod Touch mobile devices that can run iOS 7.0 or higher. Note that some old iOS devices cannot be upgraded to version 7.0.<br>
+        <br>
+        <img src="./Tutorial2_WhereAmI_files/newProjectOptions.png" width="730" height="430"><br>
+        <br>
+      </li>
+    </ul>
+    <li>Click Next. In the File Browser window displayed, <br>
+      <br>
+<ol>
+        <li>Select a location on your hard disk to store your project. </li>
+        <li><strong>Uncheck Source Control</strong> to disable version control. Click <strong>Create</strong> to create your project.</li>
+      </ol>
+    </li>
+  </ol>
+</blockquote>
+<p class="areaName"><a name="Step3" id="Step3"></a>Step 3: Setting General Project Attributes</p>
+<blockquote>
+  <p>Set the following project attributes under the <strong>General</strong> tab as shown in the following screenshot:</p>
+  <ol>
+    <li>Click the project name <strong>WhereAmI</strong> in the project navigator to display the <strong>General</strong> project settings.</li>
+    <li>Click the <strong>Team</strong> pop-up menu and select your <strong>iOS Developer Program</strong> account name from the list displayed. If you have not added your iOS Developer Program account, select<strong> Add an Account...</strong><br>
+    </li>
+  </ol>
+  <blockquote>
+    <p><img src="./Tutorial2_WhereAmI_files/generalSettings.png" width="960" height="582"><br>
+      <br>
+    </p>
+  </blockquote>
+</blockquote>
+<p class="areaName"><a name="Step4" id="Step4"></a>Step 4: Application Icons and Launch Images</p>
+<blockquote>
+  <ol>
+    <ol>
+      <li> Download the <a href="http://manta.cs.vt.edu/CS3714/StudentsOnly/TutorialApps/WhereAmI/WhereAmI_files.zip">WhereAmI_files.zip</a> file.</li>
+      <li>Uncompress it.</li>
+      <li>Click <span class="courier">Images.xcassets</span> in the project navigator as shown below to display the Image Assets Pane.</li>
+      <li>Drag and drop the dowloaded folders <strong>App Icons</strong> and <strong>Launch Images</strong> into the Image Assets Pane as shown below.</li>
+      <li>Images dragged and dropped in the Image Assets Pane are stored in the <strong>Media Library</strong>.<br>
+      </li>
+    </ol>
+  </ol>
+  <p class="ListTitle"> Setting the App Icons</p>
+  <ol>
+    <ol>
+      <li>Click <strong>AppIcon</strong> in the Image Assets Pane as shown in the following screenshot.</li>
+      <li>Select only the <em>iOS 7.0 and Later Sizes</em> option in the Attributes Inspector on the top right corner of the window as shown below.</li>
+      <li>Click the <strong>Media Library</strong> icon in the Library Selector Bar to show all of the image assets for the project.</li>
+      <li>Drag  each app icon and drop it in its corresponding placeholder  as shown in the following screenshot.</li>
+      <li>You can inspect the size, filename, and other attributes of a selected app icon using the <strong>Attributes Inspector</strong> as depicted in the screenshot below. </li>
+    </ol>
+  </ol>
+  <blockquote>
+    <p><img src="./Tutorial2_WhereAmI_files/appIcons.png" width="1172" height="646"></p>
+  </blockquote>
+  <p><span class="ListTitle"> Setting the Launch Images</span><br>
+  </p>
+  <blockquote>
+    <ol>
+      <li>Click <strong>LaunchImage</strong> in the Image Assets Pane.</li>
+      <li>Select only the <em>iOS 7.0 and Later </em> option  in the Attributes Inspector on the top right corner of the window.</li>
+      <li>Click the <strong>Media Library</strong> icon in the Library Selector Bar to show all of the image assets for the project.</li>
+      <li>Drag  each launch image and drop it on its corresponding placeholder.</li>
+    </ol>
+  </blockquote>
+</blockquote>
+<p class="areaName"><a name="Step5" id="Step5"></a>Step 5: iOS Layers, Frameworks, and Classes</p>
+<blockquote>
+  <p>“Apple delivers most of its system interfaces in special packages called Framework. A <strong>Framework</strong> is a directory that contains a dynamic shared library and the resources (such as header files, images, helper applications, and so on) needed to support that library. To use frameworks, you link them into your application project just as you would any other shared library. Linking them to your project gives you access to the features of the framework and also lets the development tools know where to find the header files and other framework resources.” [Apple]</p>
+  <p>The iOS programming is abstracted in four <span class="HeadingPurple">Layers</span> as depicted in the following figure. Each Layer contains a number of <span class="HeadingPurple">Frameworks</span> as shown below. Each Framework contains a number of <span class="HeadingPurple">Classes</span>. Each Class contains a number of <span class="HeadingPurple">Methods</span> (Functions).  </p>
+  <p><img src="./Tutorial2_WhereAmI_files/iOSFrameworks.png" width="882" height="971"></p>
+  <p>We need to display a map and determine the user's current location in our application; therefore, we need to import the <strong>MapKit</strong> and <strong>CoreLocation</strong> frameworks  as shown in the following screenshot.</p>
+  <p><img src="./Tutorial2_WhereAmI_files/mapKitCoreLoc.png" width="1024" height="738"></p>
+  <p>Clicking a <strong>Class Reference</strong> describes the class and provides documentations for all of the  methods (functions) available in that class.</p>
+  <p>In summary: A <strong>Layer</strong> contains frameworks; A <strong>Framework</strong> contains classes. A <strong>Class</strong> contains methods/functions.</p>
+  <p><img src="./Tutorial2_WhereAmI_files/layersToMethods.png" width="712" height="49"><br>
+    <br>
+  </p>
+</blockquote>
+<p class="areaName"><a name="Step6" id="Step6"></a>Step 6: Map Kit Framework</p>
+<blockquote>
+  <p>We need to link the <strong>MapKit</strong> and <strong>CoreLocation</strong> frameworks to be able to display a map and determine the user's current location in our application.</p>
+  <p>To link the<strong> MapKit</strong> and <strong>CoreLocation</strong> frameworks to your project so that its classes are made available and linked to your application:</p>
+  <ol>
+    <li>In Xcode <em>Project Navigator</em>, click <strong>WhereAmI</strong> on the top, and click <strong>General</strong> tab.</li>
+    <li>Scroll down to reveal <strong>Linked Frameworks and Libraries</strong> and expand it as shown in the following screenshot.</li>
+    <li>Click the + button  under the <strong>Linked Frameworks and Libraries</strong> as shown below.  </li>
+  </ol>
+  <p><img src="./Tutorial2_WhereAmI_files/linkFramework.png" width="1152" height="438"></p>
+  <p>In the <em>Choose frameworks and libraries to add</em> dialog, scroll down and click <strong>CoreLocation.framework</strong> to select it and Command-click the <strong>MapKit.framework</strong> to also select it. Click <strong>Add</strong> to link them.</p>
+  <p><img src="./Tutorial2_WhereAmI_files/selectFramework.png" width="400" height="460"></p>
+  <p>The <strong>MapKit framework</strong> is linked to your project as shown in the following screenshot.</p>
+  <p><img src="./Tutorial2_WhereAmI_files/linkedFrameworks.png" width="1152" height="430"></p>
+  <p>The Xcode Project Navigator enables you to organize your project files by using Groups. A Group does not necessarily map to a folder on your hard disk. It is provided for organizing your files.</p>
+  <ul>
+    <li>Right click the project name <strong>WhereAmI</strong> on  top of  the project navigator.</li>
+    <li>Select <strong>New Group</strong> from the displayed menu.</li>
+    <li>Name your new group <strong>Frameworks</strong>.</li>
+    <li>Move the linked framework files into the newly created Frameworks group.</li>
+  </ul>
+</blockquote>
+<p class="areaName"><a name="Step7" id="Step7"></a>Step 7: User Interface Development</p>
+<blockquote>
+  <p>The<span class="HeadingPurple"> Interface Builder (IB) </span> is used to create your application's <strong>User Interface (UI)</strong>. It enables you to drag and drop UI objects from the Object Library  and graphically connect some UI objects  to instance variables and instance methods specified in your code. We use the <span class="courier">.storyboard</span> file to use the IB  to create the UI.</p>
+  <p>What is a <strong>Storyboard</strong>? Dictionary definitions:</p>
+  <ul>
+    <li>“a panel or panels on which a sequence of sketches depict the significant changes of action and scene in a planned film, as for a movie, television show, or advertisement.”</li>
+    <li>“a series of sketches or photographs showing the sequence of shots or images planned for a film”</li>
+  </ul>
+  <p>We use the term <strong>Storyboard</strong> to refer to an iOS file containing</p>
+  <ul>
+    <li>an iOS app's  navigation structure or logical flow (with horizontal and vertical decomposition of app's functionality),</li>
+    <li>definitions of the views making up the iOS app's UI,</li>
+    <li>connection of a UI object to code for performing an action or defining an outlet,</li>
+    <li>specification of a relationship between two views, and</li>
+    <li>how a view will segue into the next one.</li>
+  </ul>
+  <p>Click the <span class="courier">Main.storyboard</span> file in the Project Navigator to display your app's only scene (view) as shown in the screenshot below.  </p>
+  <ol>
+    <li>Show the Utility area. Select <strong>Object Library</strong> from the Library Selector Bar. </li>
+    <li>Select the <strong>View object</strong> in the document outline pane. </li>
+    <li>Drag  a <strong>MapKit View</strong> object from the Object Library  and drop it on top of the selected View object as shown in the following screenshot. This action corresponds to  instantiation of a new object at design time.<br>
+    </li>
+  </ol>
+  <p><img src="./Tutorial2_WhereAmI_files/mainStoryboard.png" width="1395" height="796"></p>
+  <ol>
+    <li>While the newly instantiated <strong>Map View</strong> object is selected, click the <strong>Pin</strong> tool to pop up its menu as shown in the following screenshot.</li>
+    <li>Set the constraints as shown below so that the map scales and positions itself to fill the entire screen  in portrait and landscape device orientations for all screen sizes.</li>
+  </ol>
+  <blockquote>
+    <p><img src="./Tutorial2_WhereAmI_files/addConstraints.png" width="292" height="396"></p>
+  </blockquote>
+  <p>Set the <strong>Map View</strong> object to show the user's current location upon its first display.</p>
+  <ol>
+    <li>While the  <strong>Map View</strong> object is selected, click  the <strong>Attributes Inspector</strong> on the Inspector Selector Bar as shown in the following screenshot.</li>
+    <li><strong>Check</strong> the box for <strong>Shows User Location</strong>, as shown below. </li>
+  </ol>
+<p><img src="./Tutorial2_WhereAmI_files/mapAttributes.png" width="1395" height="796"><br>
+  <br>
+</p>
+</blockquote>
+<p class="areaName"><a name="Step8" id="Step8"></a>Step 8: Obtaining User's Authorization</p>
+<blockquote>
+  <p>Recently, some apps have been developed to monitor the user's geo-location while the app is inactive or running in the background without the knowledge of the user. Many users do not frequently terminate their apps and don't even know that their apps continue to run in the background unless they are terminated. These app developers have been collecting geo-location information of the users and selling the collected data without the knowledge of the user. This has certainly created a serious privacy violation. Therefore, Apple has changed the way authorization is requested from the user in iOS 8.</p>
+  <p>Now, as app developers, we must  ask for user's permission to monitor his/her geo-location clearly in two different manners:</p>
+  <p class="HeadingPurple">Option 1:  requestWhenInUseAuthorization</p>
+  <ul>
+    <li>(a) Ask your locationManager to request user's authorization while the app is being used.                 </li>
+    <li>(b) Add a new row in the <span class="courier">Info.plist</span> file for NSLocationWhenInUseUsageDescription, for which you specify, e.g.,                     "WhereAmI requires monitoring your location only when you are using the app!"                      <br>
+      <br>
+    <img src="./Tutorial2_WhereAmI_files/requestWhenInUseAuthorization.png" width="320" height="579"></li>
+  </ul>
+  <p class="HeadingPurple">Option 2:  requestAlwaysAuthorization</p>
+  <ul>
+    <li>(a) Ask your locationManager to request user's authorization even when the app is not being used.                 </li>
+    <li>(b) Add a new row in the <span class="courier">Info.plist</span> file for NSLocationAlwaysUsageDescription, for which you specify, e.g.,                     "WhereAmI requires monitoring your location even when you are not using your app!"                  <br>
+      <br>
+    <img src="./Tutorial2_WhereAmI_files/requestAlwaysAuthorization.png" width="320" height="579">    </li>
+  </ul>
+  <p>You select and use only one of these two options depending on your app's requirement.</p>
+  <p class="ListTitle">App Delegate Class File</p>
+  <blockquote>
+    <p>Copy and paste the documented code given below. <span class="Heading">Carefully study the code, understand what it is doing, and learn from it!</span></p>
+    <p>The <span class="courier">AppDelegate.swift</span> file:<br>
+    </p><p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; AppDelegate.swift</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; WhereAmI</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Created by Osman Balci on 8/28/14.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//&nbsp; Copyright (c) 2014 Osman Balci. All rights  reserved.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">import</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> UIKit</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">import</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> MapKit</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">import</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> CoreLocation</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">@UIApplicationMain</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">class</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> AppDelegate: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIResponder</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">, </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplicationDelegate</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">var</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> window: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIWindow</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">?</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">/*</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp; Instantiate an object from (or create an  instance of) the CLLocationManager class and store the</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp; object reference (unique ID) of the newly  created object into the instance variable called locationManager.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp; You can use the created location manager  object to retrieve the most recent location of the user.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp; */</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">var</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> locationManager = </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">CLLocationManager</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">()</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">func</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> application(application: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">UIApplication</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!, didFinishLaunchingWithOptions  launchOptions: </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">NSDictionary</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">!) -&gt; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#5C2699; ">Bool</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> {</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">/*</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Monitoring the user's current location  is a serious privacy issue!</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You are required to get the user's  permission in two ways:</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (1) requestWhenInUseAuthorization:</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Ask your locationManager to  request user's authorization while the app is being used.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Add a new row in the Info.plist  file for NSLocationWhenInUseUsageDescription, for which you specify, e.g.,</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "WhereAmI requires  monitoring your location only when you are using the app!"</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (2) requestAlwaysAuthorization:</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (a) Ask your locationManager to  request user's authorization even when the app is not being used.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; (b) Add a new row in the Info.plist  file for NSLocationAlwaysUsageDescription, for which you specify, e.g.,</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "WhereAmI requires  monitoring your location even when you are not using your app!"</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; You select and use only one of these  two options depending on your app's requirement.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; */</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Option 1: Request user's  authorization while the app is being used.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">self</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">.</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#3F6E74; ">locationManager</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">.</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#2E0D6E; ">requestWhenInUseAuthorization</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">()</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">// Option 2: Request user's  authorization even when the app is not being used.</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#007400; ">//  self.locationManager.requestAlwaysAuthorization()</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">return</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:#AA0D91; ">true</span><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; "> </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; }</span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">&nbsp;&nbsp;&nbsp; </span></p>
+    <p class="MsoNormal" style="margin-bottom:.0001pt;line-height:normal;text-autospace:none;"><span style="font-family:&#39;Arial&#39;,&#39;sans-serif&#39;; font-size:10.0pt; color:black; ">}</span></p>
+  </blockquote>
+  <p class="ListTitle">Info.plist File</p>
+  <ol>
+    <li>Click the <span class="courier">Info.plist</span> file in the <strong>Supporting Files</strong> group in the project navigator to open it as shown in the following screenshot. Or you can double click it to open it in its own window.</li>
+    <li>Right click anywhere on the empty space on the bottom and select <strong>Add Row</strong>.</li>
+    <li>Add the row as shown in the following screenshot.</li>
+    <li>Save the plist file.</li>
+  </ol>
+  <blockquote>
+    <p><img src="./Tutorial2_WhereAmI_files/plistAddRow.png" width="855" height="663"><br>
+      <br>
+  </p>
+  </blockquote>
+</blockquote>
+<p class="areaName"><a name="Step9" id="Step9"></a>Step 9: Running the App under the iOS Simulator</p>
+<blockquote>
+  <ol>
+    <li>Make sure that all of your files are saved.</li>
+    <li>Click the device selection pop-up menu for the iOS Simulator on the top left corner of the Xcode window and select <strong>iPhone 5S</strong>.</li>
+    <li>Click the <strong>Run</strong> button on the top left corner of the Xcode window to execute your app under the iOS Simulator.  </li>
+    <li>Under the <strong>iOS Simulator</strong>, select <strong>Hardware &#8594; Rotate Left </strong>or<strong> Rotate Right </strong> or press <strong>Command-Left Arrow</strong> or <strong>Command-Right Arrow</strong> repeatedly to see the map under different device orientations and screen sizes.</li>
+  </ol>
+  <p><span class="HeadingPurple">Your laptop or desktop computer does not have the GPS antenna to find out your current location.</span> For  purposes of testing your location-aware app, you can set a default location for the iOS Simulator to use. Under the iOS Simulator, select <strong>Debug &#8594; Location &#8594;  Custom Location...</strong> Enter latitude and longitude of the location you want to test for. For Blacksburg, you can use: Latitude: 37.228733 and Longitude: -80.419246.</p>
+  <p>Upon launch of the WhereAmI app, first the app asks for user's permission to use location information and then shows the user's current location as the default location as set in the Simulator. By zooming in, the location is shown in more detail. </p>
+  <p><span class="Heading">To truly  test your location-aware apps, you must test them on iOS devices.</span></p>
+  <p>You can view the map in all screen orientations except Upside Down as we specified it.  In the iOS Simulator, select <strong>Hardware &#8594; Rotate Left</strong> to view the map in landscape left orientation. You can toggle between device orientations by Command-Left Arrow or Command-Right Arrow.</p>
+  <p>The following screenshots are taken after the app is deployed to an iPhone 5S.</p>
+  <table border="0" cellpadding="5" cellspacing="0">
+    <tbody><tr>
+      <td><img src="./Tutorial2_WhereAmI_files/requestWhenInUseAuthorization.png" width="320" height="579"></td>
+      <td><div align="center">Portrait Orientation<br>
+          <img src="./Tutorial2_WhereAmI_files/finishedAppP.png" width="320" height="568"></div></td>
+      <td><div align="center">Landscape Orientation<br>
+        <img src="./Tutorial2_WhereAmI_files/finishedAppL.png" width="568" height="320"></div></td>
+    </tr>
+  </tbody></table>
+  <br>
+</blockquote>
+<p class="areaName"><a name="Step10" id="Step10"></a>Step 10: Running the App on iPhone or iPod Touch</p>
+<blockquote>
+  <ol>
+    <li>Register the iOS device in your iOS Developer Program under the Devices section. Click the + button to add a device. Assign a name to your device and copy and paste the unique identifier UDID of the device.</li>
+    <li>Under the Provisioning Profiles section, click Development.</li>
+    <li>Edit your existing Provisioning Profile in your iOS Developer Program and include the iOS device just registered.</li>
+    <li>After you add the test device to your Provisioning Profile, click Generate to generate a new Provisioning Profile. You need to do this every time you want to use a new test device. </li>
+    <li>Download the newly generated Provisioning Profile and double click it to install it into Xcode.</li>
+    <li>Connect the device to your computer, e.g., iMac or MacBook Pro. The screenshot below shows <strong>MSEL iPhone 5S Balci</strong> device as connected.</li>
+    <li>Click the Run button to deploy and run the app on the connected iOS device.</li>
+  </ol>
+  <p><img src="./Tutorial2_WhereAmI_files/runOnDevice.png" width="1134" height="445"></p>
+<p>Upon installing your app on your device, it is automatically launched to show you the map with a blue circle. Double-tap the blue circle repeatedly  or near it to zoom in. You should see your current location correctly as marked by the blue circle. If you click the blue circle, the <strong>Current Location</strong> annotation is displayed.</p>
+<p>&nbsp;</p>
+</blockquote>
+<!-- InstanceEndEditable -->
+
+<!-- InstanceEnd -->
+</body></html>
